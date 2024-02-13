@@ -1,18 +1,48 @@
-# Web Service Testing Samples
+# Ringkasan Pengujian API Booking
+# Tujuan: Melakukan pengujian terhadap API yang berkaitan dengan operasi CRUD (Create, Read, Update, Delete) pada data booking.
 
-See https://docs.katalon.com/katalon-studio/docs/web-service-samples.html.
+# Metode Pengujian:
 
-## Companion products
+## 1. Menambahkan Booking:
 
-### Katalon TestOps
+Langkah:
+- Mengirim permintaan API untuk menambahkan data booking dengan metode POST.
+- Memverifikasi kode respons API adalah 200 (OK).
+- Menyimpan isi respons untuk keperluan pengujian selanjutnya.
+- Hasil yang Diharapkan:
+- Data booking berhasil ditambahkan.
+- Isi respons berisi informasi booking yang baru dibuat, termasuk ID booking.
 
-[Katalon TestOps](https://analytics.katalon.com) is a web-based application that provides dynamic perspectives and an insightful look at your automation testing data. You can leverage your automation testing data by transforming and visualizing your data; analyzing test results; seamlessly integrating with such tools as Katalon Studio and Jira; maximizing the testing capacity with remote execution.
+## 2. Memeriksa dan Menampilkan Booking:
 
-* Read our [documentation](https://docs.katalon.com/katalon-analytics/docs/overview.html).
-* Ask a question on [Forum](https://forum.katalon.com/categories/katalon-analytics).
-* Request a new feature on [GitHub](CONTRIBUTING.md).
-* Vote for [Popular Feature Requests](https://github.com/katalon-analytics/katalon-analytics/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc).
-* File a bug in [GitHub Issues](https://github.com/katalon-analytics/katalon-analytics/issues).
+Langkah:
+- Mengirim permintaan API untuk mendapatkan data booking dengan metode GET.
+- Memverifikasi kode respons API adalah 200 (OK).
+- Membandingkan data booking yang ditampilkan dengan data yang diharapkan.
+- Hasil yang Diharapkan:
+- Data booking berhasil ditampilkan.
+- Data booking yang ditampilkan sesuai dengan data yang diharapkan.
 
-### Katalon Studio
-[Katalon Studio](https://www.katalon.com) is a free and complete automation testing solution for Web, Mobile, and API testing with modern methodologies (Data-Driven Testing, TDD/BDD, Page Object Model, etc.) as well as advanced integration (JIRA, qTest, Slack, CI, Katalon TestOps, etc.). Learn more about [Katalon Studio features](https://www.katalon.com/features/).
+## 3. Menghapus Booking:
+
+Langkah:
+- Mengirim permintaan API untuk menghapus data booking dengan metode DELETE.
+- Memverifikasi kode respons API adalah 201 (Created).
+- Memverifikasi bahwa data booking yang dihapus tidak lagi muncul di daftar booking.
+- Hasil yang Diharapkan:
+- Data booking berhasil dihapus.
+- Isi respons berisi pesan konfirmasi penghapusan.
+
+## 4. Memperbarui Booking:
+
+Langkah:
+- Mengirim permintaan API untuk mengubah data booking dengan metode PUT.
+- Memverifikasi kode respons API adalah 201 (Created).
+- Memverifikasi bahwa data booking yang diubah telah diperbarui dengan data yang baru.
+- Hasil yang Diharapkan:
+- Data booking berhasil diubah.
+- Isi respons berisi informasi booking yang telah diperbarui.
+
+# Kesimpulan:
+
+Berdasarkan hasil pengujian, API yang berkaitan dengan operasi CRUD pada data booking telah berfungsi dengan baik. Semua kode respons API sesuai dengan yang diharapkan dan data booking berhasil ditambahkan, ditampilkan, dihapus,
