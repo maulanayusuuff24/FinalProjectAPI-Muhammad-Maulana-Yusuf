@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+FP Update Delete,,,,13-02-2024 15:28:18,13-02-2024 15:28:42,23.991s,FAILED
+,,,,,,,
+Test Cases/Final Project API/Update a Booking,,,,13-02-2024 15:28:29,13-02-2024 15:28:32,2.544s,FAILED
+"response = sendRequest(findTestObject(""Final Proj API/Login""))",,,,13-02-2024 15:28:29,13-02-2024 15:28:31,1.151s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 15:28:31,13-02-2024 15:28:31,0.004s,PASSED
+"token = getElementPropertyValue(response, ""token"")",,,,13-02-2024 15:28:31,13-02-2024 15:28:31,0.020s,PASSED
+"updated = sendRequestAndVerify(findTestObject(""Final Proj API/UpdateBooking"", [""token"":token]))",,,,13-02-2024 15:28:31,13-02-2024 15:28:32,1.300s,PASSED
+println(updated),,,,13-02-2024 15:28:32,13-02-2024 15:28:32,0.016s,PASSED
+"verifyResponseStatusCode(updated, 200)",,,,13-02-2024 15:28:32,13-02-2024 15:28:32,0.031s,FAILED
+,,,,,,,
+Test Cases/Final Project API/Delete a Booking,,,,13-02-2024 15:28:40,13-02-2024 15:28:42,2.671s,FAILED
+"response = sendRequest(findTestObject(""Final Proj API/Login""))",,,,13-02-2024 15:28:40,13-02-2024 15:28:41,1.236s,PASSED
+"token = getElementPropertyValue(response, ""token"")",,,,13-02-2024 15:28:41,13-02-2024 15:28:41,0.019s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 15:28:41,13-02-2024 15:28:41,0.005s,PASSED
+"delete = sendRequestAndVerify(findTestObject(""Final Proj API/Detele Booking"", [""token"":token]))",,,,13-02-2024 15:28:41,13-02-2024 15:28:42,1.387s,PASSED
+println(token),,,,13-02-2024 15:28:42,13-02-2024 15:28:42,0.001s,PASSED
+"verifyResponseStatusCode(delete, 201)",,,,13-02-2024 15:28:42,13-02-2024 15:28:42,0.003s,FAILED

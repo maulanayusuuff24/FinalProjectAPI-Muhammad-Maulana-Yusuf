@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Final Project-Login and Add Booking,,,,13-02-2024 15:36:42,13-02-2024 15:36:48,5.890s,PASSED
+,,,,,,,
+Test Cases/Final Project API/Add Booking,,,,13-02-2024 15:36:43,13-02-2024 15:36:47,3.842s,PASSED
+"resp = sendRequest(findTestObject(""Final Proj API/CreateBooking""))",,,,13-02-2024 15:36:43,13-02-2024 15:36:47,3.666s,PASSED
+"verifyResponseStatusCode(resp, 200)",,,,13-02-2024 15:36:47,13-02-2024 15:36:47,0.028s,PASSED
+,,,,,,,
+Test Cases/Final Project API/Check GetBooking,,,,13-02-2024 15:36:47,13-02-2024 15:36:48,1.635s,PASSED
+"responseGetBooking = sendRequest(findTestObject(""Final Proj API/Booking - GetBooking"", [""id"":""1""]))",,,,13-02-2024 15:36:47,13-02-2024 15:36:48,1.565s,PASSED
+"verifyResponseStatusCode(responseGetBooking, 200)",,,,13-02-2024 15:36:48,13-02-2024 15:36:48,0.004s,PASSED

@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Final Project,,,,13-02-2024 14:06:12,13-02-2024 14:06:20,8.253s,FAILED
+,,,,,,,
+Test Cases/Final Project API/Get login token,,,,13-02-2024 14:06:12,13-02-2024 14:06:15,2.778s,PASSED
+"response = sendRequest(findTestObject(""Final Proj API/Login""))",,,,13-02-2024 14:06:12,13-02-2024 14:06:15,2.648s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 14:06:15,13-02-2024 14:06:15,0.018s,PASSED
+,,,,,,,
+Test Cases/Final Project API/Delete a Booking,,,,13-02-2024 14:06:19,13-02-2024 14:06:20,1.225s,FAILED
+"responseDelete = sendRequest(findTestObject(""Final Proj API/Detele Booking""))",,,,13-02-2024 14:06:19,13-02-2024 14:06:20,1.210s,PASSED
+"verifyResponseStatusCode(responseDelete, 201)",,,,13-02-2024 14:06:20,13-02-2024 14:06:20,0.004s,FAILED

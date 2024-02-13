@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Final Project-Login and Add Booking" time="5.89" tests="2" failures="0" errors="0">
+   <testsuite name="Final Project-Login and Add Booking" tests="2" failures="0" errors="0" time="5.89" skipped="0" timestamp="13-02-2024T15:36:42" hostname="Maulana Y - DESKTOP-736VERV" id="Test Suites/Final ProjectAPI/Final Project-Login and Add Booking">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Maulana Y\\git\\katalon-FinalAPI-Muhammad-Maulana-Yusuf\\Reports\\20240213_153633\\Final ProjectAPI\\Final Project-Login and Add Booking\\20240213_153634"/>
+         <property name="logFiles" value="C:\\Users\\Maulana Y\\git\\katalon-FinalAPI-Muhammad-Maulana-Yusuf\\Reports\\20240213_153633\\Final ProjectAPI\\Final Project-Login and Add Booking\\20240213_153634\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Maulana Y - DESKTOP-736VERV"/>
+         <property name="hostAddress" value="172.16.213.181"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.3.0.212"/>
+      </properties>
+      <testcase name="Test Cases/Final Project API/Add Booking" time="3.842" classname="Test Cases/Final Project API/Add Booking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T15:36:43 - [TEST_CASE][PASSED] - Test Cases/Final Project API/Add Booking: Test Cases/Final Project API/Add Booking
+
+13-02-2024T15:36:43 - [TEST_STEP][PASSED] - resp = sendRequest(findTestObject("Final Proj API/CreateBooking")): Send request successfully
+
+13-02-2024T15:36:47 - [MESSAGE][INFO] - HAR: C:\Users\Maulana Y\git\katalon-FinalAPI-Muhammad-Maulana-Yusuf\Reports\20240213_153633\Final ProjectAPI\Final Project-Login and Add Booking\20240213_153634\requests\main\0.har
+
+13-02-2024T15:36:47 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T15:36:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(resp, 200): Verify response status code successfully
+
+13-02-2024T15:36:47 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Final Project API/Check GetBooking" time="1.635" classname="Test Cases/Final Project API/Check GetBooking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T15:36:47 - [TEST_CASE][PASSED] - Test Cases/Final Project API/Check GetBooking: Test Cases/Final Project API/Check GetBooking
+
+13-02-2024T15:36:47 - [TEST_STEP][PASSED] - responseGetBooking = sendRequest(findTestObject("Final Proj API/Booking - GetBooking", ["id":"1"])): Send request successfully
+
+13-02-2024T15:36:48 - [MESSAGE][INFO] - HAR: C:\Users\Maulana Y\git\katalon-FinalAPI-Muhammad-Maulana-Yusuf\Reports\20240213_153633\Final ProjectAPI\Final Project-Login and Add Booking\20240213_153634\requests\main\1.har
+
+13-02-2024T15:36:48 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T15:36:48 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGetBooking, 200): Verify response status code successfully
+
+13-02-2024T15:36:48 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-02-2024T15:36:42 - [TEST_SUITE][PASSED] - Final Project-Login and Add Booking: Test Cases/Final Project API/Check GetBooking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

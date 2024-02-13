@@ -24,6 +24,16 @@ public class GlobalVariable {
      */
     public static Object globalId
      
+    /**
+     * <p></p>
+     */
+    public static Object response
+     
+    /**
+     * <p></p>
+     */
+    public static Object getid
+     
 
     static {
         try {
@@ -34,6 +44,8 @@ public class GlobalVariable {
             baseUrl = selectedVariables['baseUrl']
             successCode = selectedVariables['successCode']
             globalId = selectedVariables['globalId']
+            response = selectedVariables['response']
+            getid = selectedVariables['getid']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

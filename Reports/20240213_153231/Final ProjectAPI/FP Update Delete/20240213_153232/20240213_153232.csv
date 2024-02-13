@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+FP Update Delete,,,,13-02-2024 15:32:40,13-02-2024 15:32:49,8.805s,PASSED
+,,,,,,,
+Test Cases/Final Project API/Update a Booking,,,,13-02-2024 15:32:41,13-02-2024 15:32:46,5.645s,PASSED
+"response = sendRequest(findTestObject(""Final Proj API/Login""))",,,,13-02-2024 15:32:41,13-02-2024 15:32:45,3.680s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 15:32:45,13-02-2024 15:32:45,0.019s,PASSED
+"token = getElementPropertyValue(response, ""token"")",,,,13-02-2024 15:32:45,13-02-2024 15:32:45,0.059s,PASSED
+"updated = sendRequestAndVerify(findTestObject(""Final Proj API/UpdateBooking"", [""token"":token]))",,,,13-02-2024 15:32:45,13-02-2024 15:32:46,1.477s,PASSED
+println(updated),,,,13-02-2024 15:32:46,13-02-2024 15:32:46,0.005s,PASSED
+"verifyResponseStatusCode(updated, 200)",,,,13-02-2024 15:32:46,13-02-2024 15:32:46,0.005s,PASSED
+"verifyElementPropertyValue(updated, ""firstname"", ""James"")",,,,13-02-2024 15:32:46,13-02-2024 15:32:46,0.038s,PASSED
+"verifyElementPropertyValue(updated, ""lastname"", ""Brown"")",,,,13-02-2024 15:32:46,13-02-2024 15:32:46,0.034s,PASSED
+"verifyElementPropertyValue(updated, ""totalprice"", 111)",,,,13-02-2024 15:32:46,13-02-2024 15:32:46,0.034s,PASSED
+,,,,,,,
+Test Cases/Final Project API/Delete a Booking,,,,13-02-2024 15:32:46,13-02-2024 15:32:49,2.579s,PASSED
+"response = sendRequest(findTestObject(""Final Proj API/Login""))",,,,13-02-2024 15:32:46,13-02-2024 15:32:48,1.115s,PASSED
+"token = getElementPropertyValue(response, ""token"")",,,,13-02-2024 15:32:48,13-02-2024 15:32:48,0.040s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 15:32:48,13-02-2024 15:32:48,0.004s,PASSED
+"delete = sendRequestAndVerify(findTestObject(""Final Proj API/Detele Booking"", [""token"":token]))",,,,13-02-2024 15:32:48,13-02-2024 15:32:49,1.325s,PASSED
+println(token),,,,13-02-2024 15:32:49,13-02-2024 15:32:49,0.004s,PASSED
+"verifyResponseStatusCode(delete, 201)",,,,13-02-2024 15:32:49,13-02-2024 15:32:49,0.003s,PASSED
